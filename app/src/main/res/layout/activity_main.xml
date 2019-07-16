@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity"
+    android:orientation="vertical"
+    android:padding="5dp"
+   >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+      <TableRow
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2"
+         >
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="50dp"
+              android:text="Name:"
+              android:textSize="15dp"
+              android:textStyle="bold"
+              app:fontFamily="sans-serif-condensed-medium"
+              android:layout_weight="0.5"
+              android:paddingLeft="5dp"/>
+
+          <EditText
+              android:id="@+id/edName"
+              android:layout_width="0dp"
+              android:layout_height="50dp"
+              android:hint="Name"
+              android:textSize="15dp"
+              android:textStyle="normal"
+              app:fontFamily="sans-serif-condensed-medium"
+              android:layout_weight="1.5"
+              android:paddingLeft="5dp"/>
+
+
+
+      </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="Email:"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:layout_weight="0.5"
+                android:paddingLeft="5dp"/>
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:hint="Email"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:layout_weight="1.5"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="Phone:"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:layout_weight="0.5"
+                android:paddingLeft="5dp"/>
+
+            <EditText
+                android:id="@+id/edPhone"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:hint="Phone"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:layout_weight="1.5"
+                android:inputType="phone"
+                android:paddingLeft="5dp"/>
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Hobbies:"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+            <CheckBox
+                android:id="@+id/chkDance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dancing"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/chkPaint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Painting"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/chkRead"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reading"
+                android:textSize="15dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="Gender:"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed-medium"
+                tools:text="Name"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"/>
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Male"
+                android:layout_weight="1"
+                />
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Female"
+                    android:layout_weight="1"
+                    />
+                <RadioButton
+                    android:id="@+id/other"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Other"
+                    android:layout_weight="1"
+                    />
+
+            </RadioGroup>
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="Qualification:"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:layout_weight="0.5"
+                android:paddingLeft="5dp"/>
+
+            <Spinner
+                android:id="@+id/spQualification"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:layout_weight="0.6"
+                />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="DOB:"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:layout_weight="0.5"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/textDob"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text=" "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:layout_weight="0.6"
+                android:paddingLeft="10dp"/>
+
+            <ImageButton
+                android:id="@+id/btnDob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_event_black_24dp"
+               />
+
+
+
+        </TableRow>
+
+
+
+    </TableLayout>
+<Button
+    android:id="@+id/btnSubmit"
+    android:layout_marginTop="30dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Submit"/>
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="List"
+        android:onClick="openList"/>
+</LinearLayout>
